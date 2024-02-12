@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/circe-rounded');
+:root{
+    --blanco: #fff;
+    --negro: #1D1C1D;
+    --aquamarina: #00AEAF;
+    --amarillito: #F4BD41;
+    --moradito: #697AB5;    
+    --rosadito: #D04490;
+    --grisaceo: #E7E7E7;
+    --moradote: #3F3F5A;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--grisaceo);
+}
+
+a{
+    text-decoration: none;
+}
+/* CABECERA/ HEADER  */
+
+header{
+    background: linear-gradient(to right, #697AB5, #40415C);
+    padding: 40px 0;
+}
+
+/*COLUMNAS GRID*/
+
+@media (min-width: 768px) {
+    .division, .cabecera, footer, .duo, .producto, .conocenos, .contactanos, .form, .div, .config, #lugar{
+        display: grid;
+        grid-template-columns: 5fr 4fr 0.5fr;
+        column-gap: 0rem;
+    }
+    .cabecera{
+        column-gap: 0rem;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .producto{
+        column-gap: 0rem;
+        grid-template-columns: 2fr 1.9fr;
+    }
+
+    .medio{
+        grid-template-columns: 1fr 1.1fr;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1.7fr 0.9fr;
+        column-gap: 165px;
+    }
+
+    .duo{
+        grid-template-columns: 1fr 2.4fr;
+        align-items: center;
+    }
+
+    .conocenos{
+        grid-template-columns: 2fr 2fr;
+        column-gap: 0;
+    }
+
+    .contactanos{
+        grid-template-columns: 2fr 2fr;
+        column-gap: 0;
+    }
+
+    .form{
+        column-gap: 55px;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .div{
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .config{
+        column-gap: 120px;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 30px;
+    }
+
+    #lugar{
+        column-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.division{
+    align-items: center;
+}
+
+#enlacelog{
+    width: 360px;
+}
+
+#logo{
+    width: 320px;
+    padding-left: 45px;
+}
+
+.cabecera h1 {
+    padding: 122px 0;
+    padding-left: 113px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 45px;
+    line-height: 75px;
+}
+
+.cabecerasola h1{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 135px;
+    text-align: end;
+    margin: 0;
+    padding: 237px 36px 110px 0;
+    font-weight: 100;
+    letter-spacing: -6px;
+}
+
+.caberrito{
+    text-align: center;
+    padding-top: 55px;
+}
+
+.caberrito img{
+    width: 335px;
+}
+
+.cabecera img{
+    margin: 0px 0px -138px -62px;
+    width: 66rem;
+}
+
+.menu{
+    padding-left: 44px;
+    padding-bottom: 42px;
+}
+
+.menu a{
+    font-size: 23px;
+    padding: 0 20px;
+    color: var(--aquamarina);
+    font-weight: 100;
+}
+
+.menu a:hover {
+    color: var(--amarillito);
+    display: inline-block;
+    transform:scale(1.15);
+    transition:all 0.5s;
+}
+
+.icon{
+    margin-bottom: 37px;
+}
+
+.icon:hover{
+    stroke: #52ABAE;
+    transform:scale(1.15);
+    transition:all 0.5s;
+}
+
+/* MEDIO*/
+
+.apoyo{
+    text-align: center;
+    font-weight: 300;
+}
+
+.apoyo .boton{
+    margin-bottom: 65px;
+}
+
+.prodf .boton{
+    margin: 20px 0 65px 0;
+}
+
+.apoyo p{
+    margin: 0;
+    font-size: 32px;
+    padding-top: 118px;
+}
+
+.boton{
+    background-color: var(--rosadito);
+    cursor: pointer;
+    color: var(--blanco);
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    letter-spacing: 5px;
+    margin-top: 54px;
+}
+
+.boton:hover{
+    background-color: #52ABAE;
+}
+
+.azulita{
+    background-color: var(--aquamarina);
+    text-align: center;
+    color: var(--blanco);
+}
+
+.degradado{
+    background: linear-gradient(to right, #0B8481, #00AEAF);
+
+}
+
+.azulita p{
+    margin: 0;
+    font-size: 31px;
+    padding: 75px 0 95px 0;
+}
+
+.producto{
+    text-align:left;
+    align-items: center;
+    padding: 0 0 0 40px;
+}
+
+.producto p{
+    padding: 0;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+#p1{
+    padding-top: 88px;
+    margin-bottom: 57px;    
+}
+
+#negrilla{
+    font-weight: 600;
+    color: #393952;
+}
+
+#prod1{
+    margin: -179px 0 -129px -48px;
+    width: 66rem;
+}
+
+#prod2{
+width: 530px;
+padding-bottom: 35px;
+}
+
+#prod3{
+    margin: -135px auto 0;
+}
+
+/* CONOCENOS */
+
+.conocenos{
+    text-align: left;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 10px 0 80px;
+    align-items: center;
+}
+
+.estorbo{
+    padding-bottom: 175px;
+}
+
+.conocenos p{
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+#NuestraH{
+    padding: 102px 0px 75px 0px;
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+    color: var(--moradote);
+}
+
+#fami{
+    width: 722px;
+    margin-top: 95px;
+}
+
+#casa{
+    width: 560px;
+    margin: 160px 0px 0px 30px;
+}
+
+#arbol{
+    width: 575px; 
+    margin: 57px 100px 46px 0;
+}
+
+#textico{
+    margin: 120px 0px 0px 0px;
+}
+
+#pri{
+    margin: 183px 0px 0px 0px;
+}
+
+/* CONTACTANOS */
+
+.contactanos{
+    padding: 88px 50px 75px 30px;
+    font-family: 'Circe Rounded', sans-serif;
+}
+
+.contactanos iframe{
+    border: 20px solid black;
+    border-radius: 20px;
+    padding: 0px 10px 10px 0px;
+    background-color: var(--moradito);
+}
+
+.contactanos h1{
+    margin: -40px 0px 45px 0px;
+    font-size: 75px;
+    color: var(--moradote);
+}
+
+.contactanos h4{
+    font-size: 55px;
+    margin: 0;
+    color: var(--moradote);
+    letter-spacing: -2px;
+}
+
+.contactanos p{
+    font-size: 35px;
+    font-weight: 300;
+    margin: 20px 0px 30px 0px;
+}
+
+#datos{
+    padding: 0px 0px 0px 95px;
+}
+
+/* CARRITO */
+
+.tabla{
+    margin: 65px auto 0;
+    width: 125rem;
+}
+
+.tabla img{
+    width: 39px;
+    margin-left: -58px;
+    margin-bottom: -6px;
+}
+
+.irpagar{
+    background-color: var(--rosadito);
+    cursor: pointer;
+    color: var(--blanco);
+    padding: 15px 480px 15px 26px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 0;
+    margin: 26px 0px 145px 0px;
+    transition: all 0.5s;
+}
+
+.irpagar:hover{
+    background-color: #98A4CD;
+    padding-right: 540px;
+    transition: all 0.5s;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #98A4CD;
+    color: white;
+    border-radius: 25px;
+    width: 1243px;
+    height: 251px;
+    text-align: center;
+    font-size: 30px;
+}
+
+td{
+    border: 1px solid white; 
+}
+
+/* PAGO */
+
+main h1, .pago-exitoso h1{
+    color: var(--moradote);
+    font-family: 'Circe Rounded', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.campo{
+    background-color: #B8B9C2;
+    border: 0;
+    border-radius: 10px;
+    color: var(--negro);
+    width: 100%;
+    height: 47px;
+    margin-top: 30px;
+}
+
+.form, #title{
+    margin: 0 auto;
+    max-width: 124rem;
+}
+
+#metodo{
+    width: 297px;
+    margin-top: 110px;
+}
+
+#tri{
+    width: 39px;
+    margin-left: -46px;
+    margin-bottom: -12px;
+}
+
+.direccional{
+    background-color: #8C8D9E;
+    cursor: pointer;
+    color: var(--blanco);
+    padding: 13px 680px 13px 26px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+    margin: 26px -12px 30px 0px;
+}
+::placeholder, select, option,.etiqueta{
+    color: var(--moradote);
+    padding-left: 20px;
+}
+
+.precio{
+    background-color: #B8B9C2;
+    width: 100%;
+    height: 47px;
+    padding-right: 824px;
+    border-radius: 10px;
+}
+
+.divi{
+    margin-top: 148px;
+}
+
+.pagar{
+    background-color: var(--rosadito);
+    cursor: pointer;
+    color: var(--blanco);
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition:all 0.5s;
+    z-index: 3;
+}
+
+.p{
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+
+.pagar:hover,.p:hover{
+    background-color: #52ABAE;
+    transform:scale(1.03);
+    transition:all 0.5s;
+    
+}
+
+.pago-exitoso{
+    position: fixed;
+    background-color: rgb(255 255 255 / 32%);
+    text-align: center;
+    top: 150px;
+    left: 410px;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    display: none; 
+}
+
+.pago-exitoso h1{
+    font-size: 80px;
+    margin: 65px 100px 65px 100px;
+}
+
+.linea{
+    background-color: var(--moradito);
+    display: block;
+    width: 490px;
+    height: 3px;
+    margin-left: 4px;
+    border-radius: 80px;
+}
+
+.uno{
+    margin-top: 10px;
+}
+
+.dos{
+    margin-left: 56px;
+    margin-bottom: 10px;
+}
+
+.check-depago:checked + .pago-exitoso {
+    display: block;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; } 
+
+/*DIRECCIONAL*/
+
+.dire{
+    margin: 0px auto 90px;
+    max-width: 115rem;
+}
+
+.enunciado{
+    margin-top: 50px;
+    display: block;
+    font-size: 30px;
+    color: var(--moradote);
+}
+
+.big, .etiqueta, .lugar, .config p{
+    height: 60px;
+    font-size: 20px;
+}
+
+.etiqueta, .lugar{
+    display: grid;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.check {
+    display: none;
+}
+
+.check-depago{
+    position: absolute;
+    margin-top: 10px;
+    width: 297px;
+    height: 60px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lugar {
+    background-color: #A2ADD0;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--blanco);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.check:checked + .lugar {
+    background-color:#DB87B4;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    left: 225px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    background-color: #C5C6CF;
+    transition: .4s;
+    transition: .4s;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    left: -4px;
+    bottom: -12px;
+    background-color: #C5C6CF;
+    transition: all 0.5s;
+}
+
+input:checked + .slider{
+    background-color: var(--moradito);
+  }
+  
+input:focus + .slider{
+    box-shadow: 0 0 1px green;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(40px);
+    transition: all 0.5s;
+    background-color: var(--moradito);
+    border: none;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    border: 1px solid #8C8D9E;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+    border: 1px solid #8C8D9E;
+} 
+
+form .pagar{
+    background-color: #E0A8C6;
+    color: var(--negro);
+    font-weight: 100;
+}
+
+form .pagar:hover{
+    background-color: var(--rosadito);
+    color: var(--blanco);
+}
+
+
+
+
+
+
+/*DECORACION*/
+
+.decoracion{
+    height: 31px;
+    background-image: url(/img/Azul\ Amarillo\ Trabajo\ en\ Equipo\ Corporativo\ Presentación.jpg);
+}
+
+.delgado{
+    height: 11px;
+}
+
+/* DIVISION MEDIO PRIMERA PAGINA XD*/ 
+
+.left img{
+    border-radius: 50%;
+    border: 9px solid var(--aquamarina);
+    width: 332px;
+}
+
+.left{
+    text-align: center;
+    padding: 100px 121px 0 0;
+}
+
+.left p{
+    margin: 20px 0 42px 0;
+    font-size: 31px;
+}
+
+.prodf{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.prod{
+    border-radius: 60px;
+    width: 42rem;
+    height: 55rem;
+    background: linear-gradient(0.25turn, #8C93A0, #00AEAF);
+    margin: 0 auto;
+    padding: 52px 0px 0px 26px;
+}
+
+.prod img{
+    width: 248px;
+}
+
+
+
+/* DEMOSTRACION*/
+
+video{
+    width: 613px;
+    /* text-decoration: none; */
+}
+
+/*FOOTER*/
+footer{
+    background-color: var(--negro);
+    padding: 80px 0 25px 0;
+}
+
+#enmedio{
+    margin: 0;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 22px;
+    line-height: 45px;
+}
+
+footer img{
+    width: 200px;
+    margin: 16px 0 0 53px;
+}
+
+.duo p{
+    font-size: 20px;
+    color: var(--blanco);
+}
+
+.flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.flotante:hover{
+    stroke: #00AF28;
+    transform: scale(1.15);
+}
+
+
